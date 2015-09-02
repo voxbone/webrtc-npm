@@ -1,0 +1,39 @@
+{
+  "name": "voxbone-webrtc",
+  "author": "Sacha Nacar",
+  "version": "0.0.8",
+  "description": "A nodejs wrapper for Voxbone WebRTC authentication",
+  "contributors": [
+    "Sacha Nacar",
+    "Torrey Searle"
+  ],
+  "keywords": [
+    "webrtc",
+    "voxbone",
+    "authentication"
+  ],
+  "scripts": {
+    "test": "mocha"
+  },
+    "dependencies": {
+    "crypto": "~0.0.3"
+  },
+  "files": [
+    "README.md",
+    "index.js"
+  ],
+  "homepage": "https://developers.voxbone.com/docs/webrtc/get-started",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/voxbone/voxbone-webrtc-npm"
+  },
+  "bugs": {
+    "url": "https://github.com/voxbone/voxbone-webrtc-npm/issues"
+  },
+  "license": [
+    {
+      "type": "MIT",
+      "url": "http://www.mit-license.org"
+    }
+  ]
+}
