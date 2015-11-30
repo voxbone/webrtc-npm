@@ -25,12 +25,13 @@ To install the Voxbone VoxSMS module and its dependencies, simply run the follow
       var voxrtc_secret = 'your_webrtc_secret';
     ````
 
-3. Create a new Voxbone object that will create the hash using the credentials
+3. Create a new Voxbone object that will create the hash using the credentials & the expiring time (in seconds) as optional value (default is 300 seconds ~ 5 minutes)
 
     `````
       var voxbone = new Voxbone({
           voxrtcUsername: voxrtc_username,
-          voxrtcSecret: voxrtc_secret
+          voxrtcSecret: voxrtc_secret,
+          voxrtcExpiresInSeconds: 300
       });
     `````
 
@@ -42,7 +43,7 @@ To install the Voxbone VoxSMS module and its dependencies, simply run the follow
           res.render('index', {});
       });
     `````
- 
+
 ### Using the voxrtc_config key
 
 /views/index.html demonstrates a sample application using the WebRTC library
@@ -73,7 +74,7 @@ To install the Voxbone VoxSMS module and its dependencies, simply run the follow
         //Add an object or string in the X-Voxbone-Context SIP header
         //voxbone.WebRTC.context = "Here's a context string";
         /**
-         ** Authenticate your browser to enable it to make calls by sending the generate 
+         ** Authenticate your browser to enable it to make calls by sending the generate
          ** voxrtc_config (taken from your backend) to the Voxbone auth server.
          **/
         voxbone.WebRTC.init(#{voxrtc_config});
