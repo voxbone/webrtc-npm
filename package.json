@@ -1,7 +1,7 @@
 {
   "name": "voxbone-webrtc",
   "author": "Sacha Nacar",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "A nodejs wrapper for Voxbone WebRTC authentication",
   "contributors": [
     "Sacha Nacar",
